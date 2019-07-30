@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Josefin+Sans|Pacifico|Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clima</title>
+</head>
+
+<body>
+
+    <div class="container my-5 mx-auto">
+        <h1 class="text-center weatherTitle my-4 text-light gradient">Clima</h1>
+        <form class="setlocation text-center my-4">
+            <!-- <label for="city">Your City:</label> -->
+            <input type="text" placeholder="Your City" name="city" class="text-center form-control dgf p-4">
+        </form>
+
+        <div class="card border-dark rounder d-none">
+            <img src="https://via.placeholder.com/400x300" alt="" class="tod card-img-top">
+            <div class="conditionIcon shadow-lg bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+            <div class="tex-muted text-uppercase text-center detailsCard">
+                <h5 class="my-3 gradient cityName">City Name</h5>
+                <div class="my-3 gradient conditions"><h4>Conditions</h4></div>
+                <div class="display-4 gradient my-4">
+                    <span class="temp"></span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/33c4382f99.js"></script>
+    <script src="app.js"></script>
+    <script src="JS/forecast.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

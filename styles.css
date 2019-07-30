@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+body{
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    background:#0b0e1f;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    /* color:silver; */
+}
+
+/* -webkit-text-fill-color: #fff; */
+
+.container{
+    max-width: 375px;
+}
+
+.conditionIcon{
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px; 
+    /* width: 100px; */
+    border-radius: 50%;
+}
+
+.dgf{
+    border-radius: 20px;
+    font-family: 'Comfortaa', cursive;
+    background: rgba(0, 0, 0, .2);
+}
+
+.gradient {
+    background: -webkit-linear-gradient(0deg, #ff6364, #7a9dff);
+    color: #ff6364;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
+
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgba(255,255,255, 1);
+    /* font-family: 'Open Sans', sans-serif; */
+  /* font-weight:300; */
+    
+    
+}
+
+
+.rounder{
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+}
+.weatherTitle{
+    font-family: 'Pacifico', cursive;
+    /* text-shadow: 3px 3px 7px rgba(9,32,43,0.9); */
+    font-size: 4em;
+}
+
+/* FONTS:
+font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Pacifico', cursive; */
+
+
+
+/* .dgf {
+    padding: 0.7rem .8rem;
+    font-size: 1rem;
+    display: inline;
+    bottom: 20px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2em;
+    position: relative;
+    background: #ff6364;
+    background: -webkit-linear-gradient(135deg, #ff6364, #7a9dff);
+    background: linear-gradient(135deg, #ff6364, #7a9dff);
+    -webkit-text-fill-color: #fff;
+} */
+
+
+
