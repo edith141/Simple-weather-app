@@ -44,7 +44,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     background: rgba(255,255,255, 1);
     /* font-family: 'Open Sans', sans-serif; */
-  /* font-weight:300; */
+    /* font-weight:300; */
     
     
 }
@@ -95,9 +95,9 @@ font-family: 'Pacifico', cursive; */
 
 /* style icon */
 .inner-addon .fas {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none;
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
 }
 
 /* align icon */

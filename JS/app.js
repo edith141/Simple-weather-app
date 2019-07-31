@@ -1,3 +1,7 @@
+//-----------------------------------------------------------
+//>>>//CODE FOR ANIMATED BACKGROUND DEPENDING UPON CURRENT WEATHER CONDITIONS
+//>>>//REMOVED BECAUSE IT LAGS ON OLDER DEVICES
+//-----------------------------------------------------------
 // let bgAnimation = "html";
 // let skyColor = 0x6ab3cf,
 //     cloudColor = 0xacc3e3,
@@ -28,13 +32,18 @@ const updateUI = (data) => {
     detailsCard.querySelector('.conditions').textContent = currWeather.WeatherText;
     detailsCard.querySelector('.temp').textContent = currWeather.Temperature.Metric.Value;
 
-    if (card.classList.contains("d-none")) {
+    if (card.classList.contains("d-none")) 
+    {
         card.classList.remove('d-none');
     }
 
     let timeOfDay = '';
     if (currWeather.IsDayTime) {
         timeOfDay = 'img/day.svg';
+        //-----------------------------------------------------------
+        //>>>//CODE FOR ANIMATED BACKGROUND DEPENDING UPON CURRENT WEATHER CONDITIONS
+        //>>>//REMOVED BECAUSE IT LAGS ON OLDER DEVICES
+        //-----------------------------------------------------------
         // dsunny = [1, 2, 3, 4];
         // dcloudy = [5, 6, 7, 20, 21];
         // dcloudydark = [8, 9, 10, 11, 12, 13, 14, 17, 19, 22, 23, 24, 25, 29, 30, 31, 32];
@@ -82,8 +91,13 @@ const updateUI = (data) => {
         //     sunlightColor: sunlightColor
         // });
     }
-    else {
+    else 
+    {
         timeOfDay = 'img/night.svg';
+        //-----------------------------------------------------------
+        //>>>//CODE FOR ANIMATED BACKGROUND DEPENDING UPON CURRENT WEATHER CONDITIONS
+        //>>>//REMOVED BECAUSE IT LAGS ON OLDER DEVICES
+        //-----------------------------------------------------------
         // dsunny = [33, 34];
         // dcloudy = [35, 7, 36, 37, 38];
         // dcloudydark = [8, 9, 10, 11, 12, 39, 40, 44, 43, 19, 22, 23, 24, 25, 29, 30, 31, 32];
@@ -132,6 +146,10 @@ const updateUI = (data) => {
         // });
     }
     todImage.setAttribute('src', timeOfDay);
+    //-----------------------------------------------------------
+    //>>>//CODE FOR ANIMATED BACKGROUND DEPENDING UPON CURRENT WEATHER CONDITIONS
+    //>>>//REMOVED BECAUSE IT LAGS ON OLDER DEVICES
+    //-----------------------------------------------------------
     // VANTA.CLOUDS({
     //     el: bgAnimation,
     //     skyColor: skyColor,
@@ -163,6 +181,7 @@ setcityForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const city = setcityForm.city.value.trim();
+    localStorage.setItem('location', city);
 
     updateLocation(city).then(weather => {
         //console.log(weather);
@@ -171,7 +190,10 @@ setcityForm.addEventListener('submit', (event) => {
     setcityForm.reset();
 })
 
-
-//const cityDisplay = document.querySelector('.cityName');
-// cityDisplay.textContent = dat[0].LocalizedName;
-//console.log(dat);
+if (localStorage.getItem('location')) {
+    //console.log(localStorage.getItem('city'));
+    updateLocation(localStorage.getItem('location')).then(weather => {
+        //console.log(weather);
+        updateUI(weather);
+    });
+}
