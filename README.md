@@ -1,4 +1,4 @@
-# Simple weather app [License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Simple weather app ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
  A simple JS based weather app I did to understand the AccuWeather API better.
 
 ## Installation
